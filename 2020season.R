@@ -96,10 +96,10 @@ write.csv(Team,paste0('dataa/',"Team.csv")
 
 ## Efficiency
           
-df <- rbind(dfT, dfW, dfL)
+df_efficiency <- rbind(dfT, dfW, dfL)
           
 Efficiency_table <-
-  df %>% select(
+  df_efficiency %>% select(
     TEAM_NAME,
     OFF_RATING,
     OFF_RATING_RANK,

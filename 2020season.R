@@ -110,7 +110,7 @@ Efficiency_table <-
           
 ### TEAM EFFICIENCY##
 
-write.csv(Efficiency_table,paste0('dataa/',"Efficiency_table.csv")
+write.csv(Efficiency_table,paste0('dataa/','Efficiency_table.csv'))
 
 #####################
 ## four factors table
@@ -221,7 +221,7 @@ four_factors <-
     Outcome
   )
 
-write.csv(four_factors,paste0('dataa/',"four_factors.csv")
+write.csv(four_factors,paste0('dataa/','four_factors.csv'))
 
 
 ### -- Stats traditional -----------
@@ -289,7 +289,7 @@ traditional_stats <- traditional_stats %>% rename(TEAM_NAME = "traditional_stats
                                  FT_PCT =(FT_PCT * 100)) %> select(TEAM_NAME,
                                  FG_PCT,FG_PCT_RANK, FG3_PCT, FG3_PCT_RANK,FT_PCT, FT_PCT_RANK,BLK,BLK_RANK,STL,STL_RANK,Outcome)
 
-write_csv(traditional_stats,paste0('dataa/',"traditional_stats.csv")
+write_csv(traditional_stats,paste0('dataa/','traditional_stats.csv'))
 
 ### shooting ##-------------------------------------------
 
@@ -371,7 +371,7 @@ team_shooting_style <-
                                  Outcome = "team_shooting_style$Outcome") %>% mutate(PCT_FGA_2PT = (PCT_FGA_2PT *
                                                                                                       100))
 
-write_csv(team_shooting_style,paste0('dataa/',"team_shooting_style.csv")
+write_csv(team_shooting_style,paste0('dataa/','team_shooting_style.csv'))
    
 # ----------------------------------------
 
@@ -581,4 +581,4 @@ team_lineups$OPP_OREB_PCT <- as.numeric(team_lineups$OPP_OREB_PCT)
 team_lineups$MIN_RANK <- as.numeric(team_lineups$MIN_RANK)
 team_lineups$MIN <- as.numeric(team_lineups$MIN)
 
-write.csv(team_lineups,paste0('dataa/',"team_lineups.csv")
+write.csv(team_lineups,paste0('dataa/','team_lineups.csv'))

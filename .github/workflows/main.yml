@@ -8,7 +8,7 @@ on:
 
 jobs:
   scrape:
-    # The type of runner that the job will run on
+    # The type of runner that the job will run on .
     runs-on: macos-latest
 
     # Load repo and install R

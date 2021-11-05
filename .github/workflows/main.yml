@@ -1,5 +1,5 @@
 # Hourly scraping
-name: Scrape
+name: G-league-Scrape
 
 # Controls when the action will run.
 on:
@@ -7,7 +7,7 @@ on:
     branches: main
 
 jobs:
-  scrape:
+  g-scrape:
     # The type of runner that the job will run on .
     runs-on: macos-latest
 
@@ -37,7 +37,6 @@ jobs:
         git config --local user.name github-actions
         git config --local user.email "actions@github.com"
         git add dataa/*
-        git commit -am "GH ACTION Autorun $(date)"
         git push origin main
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}

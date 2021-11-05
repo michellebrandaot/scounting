@@ -28,8 +28,8 @@ jobs:
         R -e 'install.packages("purrr")'
         
     # Run R script
-    - name: Scrape
-      run: Rscript Data scrape.R
+    - name: Data_scrape
+      run: Rscript Data_scrape.R
     
     # Add new files in data folder, commit along with other modified files, push
     - name: Commit files

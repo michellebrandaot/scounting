@@ -7,10 +7,9 @@ library(tidyverse)
 library(janitor)
 library(gt)
 library(httr)
-library(devtools)
 library(purrr)
 
-## scounting 
+## scouting 
 # 1. Team overview
 # 2. Efficiency_table
 # 3. Four Factors table

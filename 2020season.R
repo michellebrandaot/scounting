@@ -95,7 +95,9 @@ write.csv(Team,paste0('dataa/',"Team.csv")
 #------------------------------------------------
 
 ## Efficiency
+          
 df <- rbind(dfT, dfW, dfL)
+          
 Efficiency_table <-
   df %>% select(
     TEAM_NAME,
@@ -105,10 +107,9 @@ Efficiency_table <-
     DEF_RATING_RANK,
     NET_RATING,
     NET_RATING_RANK,
-    Outcome
-  )
-
-### TEAM EFFICIENCY ##
+    Outcome)
+          
+### TEAM EFFICIENCY##
 
 write.csv(Efficiency_table,paste0('dataa/',"Efficiency_table.csv")
 

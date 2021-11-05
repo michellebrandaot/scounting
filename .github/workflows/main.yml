@@ -3,8 +3,9 @@ name: G-league-Scrape
 
 # Controls when the action will run.
 on:
-  push:
-    branches: main
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '5 * * * *'
 
 jobs:
   g-scrape:

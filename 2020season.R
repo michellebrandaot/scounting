@@ -272,7 +272,7 @@ traditional_stats <-
     STL_RANK,
     Outcome
   )
-View(traditional_stats)
+#View(traditional_stats)
 
 
 dat3 <-  traditional_stats %>%
@@ -433,9 +433,7 @@ team_shooting_style_defense_final <-
   inner_join(team_shooting_style_defense,
              team_shooting_style_defense2,
              by = 'TEAM_NAME')
-colnames(team_shooting_style_defense_final)
-
-
+ 
 write_csv(team_shooting_style_defense_final,paste0('dataa/',
           "team_shooting_style_defense_final.csv")
 ## table shooting defense

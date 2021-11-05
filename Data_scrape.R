@@ -224,6 +224,7 @@ four_factorsT <- data.frame(json_resp1$resultSets$rowSet)
 colnames(four_factorsT) <-
   json_resp1[["resultSets"]][["headers"]][[1]]
 four_factorsT$Outcome <- "TOT"
+
 #-------------------------
 
 url_four_factors1 <-
@@ -237,6 +238,7 @@ four_factorsW <- data.frame(json_resp1W$resultSets$rowSet)
 colnames(four_factorsW) <-
   json_resp1W[["resultSets"]][["headers"]][[1]]
 four_factorsW$Outcome <- "WIN"
+
 #-----------
 url_four_factors2 <-
   "https://stats.gleague.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=20&Location=&MeasureType=Four+Factors&Month=0&OpponentTeamID=0&Outcome=L&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2020-21&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&TwoWay=0&VsConference=&VsDivision="

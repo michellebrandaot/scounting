@@ -36,9 +36,6 @@ headers = c(
   `Accept-Language` = 'en-US,en;q=0.9'
 )
 
-
- )
-
 # url <- "https://stats.gleague.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=20&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2020-21&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&TwoWay=0&VsConference=&VsDivision="
 # resp <- url %>% .nba_headers()
 # df_list <- purrr::map(1:length(resp$resultSets$name), function(x) {

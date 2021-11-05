@@ -90,7 +90,7 @@ Team <-
   dfT %>% select(TEAM_NAME, GP, W, L, W_PCT, PACE, PACE_RANK, PACE_PER40)
 
 
-write.csv(Team,paste0('dataa/','Team.csv')
+write.csv(Team,paste0('dataa/','Team.csv'))
 #------------------------------------------------
 
 ## Efficiency

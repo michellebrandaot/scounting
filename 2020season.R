@@ -56,7 +56,7 @@ res <- GET(url = url, add_headers(.headers = headers))
 
 json_resp <- fromJSON(content(res, "text"))
 dfT <- data.frame(json_resp$resultSets$rowSet)
-? fromJSON
+
 colnames(dfT) <- json_resp[["resultSets"]][["headers"]][[1]]
 dfT$Outcome <- "TOT"
 #-------------------------
@@ -90,8 +90,7 @@ Team <-
   dfT %>% select(TEAM_NAME, GP, W, L, W_PCT, PACE, PACE_RANK, PACE_PER40)
 
 
-write.csv(Team,paste0('dataa/',"Team.csv")
-
+write.csv(Team,paste0('dataa/','Team.csv')
 #------------------------------------------------
 
 ## Efficiency

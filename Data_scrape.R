@@ -55,7 +55,7 @@ headers = c(
 # url <- "https://stats.gleague.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=20&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2020-21&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&TwoWay=0&VsConference=&VsDivision="
 # resp <- url %>% .nba_headers()
 # df_list <- purrr::map(1:length(resp$resultSets$name), function(x) {
-#   data <- resp$resultSets$rowSet[[x]] %>% data.frame(stringsAsFactors = F) %>%
+#   / <- resp$resultSets$rowSet[[x]] %>% data.frame(stringsAsFactors = F) %>%
 #     as_tibble()
 #   json_names <- resp$resultSets$headers[[x]]
 #   colnames(data) <- json_names
@@ -135,7 +135,7 @@ table_1 <- Team %>%
 )
 
 
-write.csv(Team,paste0('data/',"Team.csv")
+write.csv(Team,paste0('dataa/',"Team.csv")
 
 #------------------------------------------------
 
@@ -206,7 +206,7 @@ table_team_efficiency <- Efficiency_table %>%
 
 
 
-write.csv(Efficiency_table,paste0('data/',"Efficiency_table.csv")
+write.csv(Efficiency_table,paste0('dataa/',"Efficiency_table.csv")
 
 #####################
 ## four factors table
@@ -317,7 +317,7 @@ four_factors <-
     Outcome
   )
 
-write.csv(four_factors,paste0('data/',"four_factors.csv")
+write.csv(four_factors,paste0('dataa/',"four_factors.csv")
 
 ## tabela  four factors
 
@@ -503,7 +503,7 @@ traditional_stats <-
 colnames(team_shooting_style)
 
 
-write_csv(traditional_stats,paste0('data/',"traditional_stats.csv")
+write_csv(traditional_stats,paste0('dataa/',"traditional_stats.csv")
 
 ## table traditional stats
 
@@ -629,7 +629,7 @@ team_shooting_style <-
                                  Outcome = "team_shooting_style$Outcome") %>% mutate(PCT_FGA_2PT = (PCT_FGA_2PT *
                                                                                                       100))
 
-write_csv(team_shooting_style,paste0('data/',"team_shooting_style.csv")
+write_csv(team_shooting_style,paste0('dataa/',"team_shooting_style.csv")
 
 Table_shooting <- team_shooting_style  %>%
   gt(rowname_col = "TEAM_NAME") %>%
@@ -791,7 +791,7 @@ team_shooting_style_defense_final <-
 colnames(team_shooting_style_defense_final)
 
 
-write_csv(team_shooting_style_defense_final,paste0('data/',
+write_csv(team_shooting_style_defense_final,paste0('dataa/',
           "team_shooting_style_defense_final.csv")
 ## table shooting defense
 
@@ -997,7 +997,7 @@ player_shooting_style <-
     "Backcourt_3_FG_PCT"
   )
 
-write.csv(player_shooting_style,paste0('data/',"player_shooting_style.csv")
+write.csv(player_shooting_style,paste0('dataa/',"player_shooting_style.csv")
 
 player_shooting_style  %>% arrange(TEAM_ABBREVIATION, PLAYER_NAME) %>%
   gt(rowname_col = "PLAYER_NAME") %>%
@@ -1249,7 +1249,7 @@ team_lineups$OPP_OREB_PCT <- as.numeric(team_lineups$OPP_OREB_PCT)
 team_lineups$MIN_RANK <- as.numeric(team_lineups$MIN_RANK)
 team_lineups$MIN <- as.numeric(team_lineups$MIN)
 
-write.csv(team_lineups,paste0('data/',"team_lineups.csv")
+write.csv(team_lineups,paste0('dataa/',"team_lineups.csv")
 dim(team_lineups)
 team_lineups %>% filter(MIN > 5)
 team_lineups %>%  gt(rowname_col = "GROUP_NAME") %>%

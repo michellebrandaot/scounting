@@ -29,8 +29,8 @@ jobs:
         R -e 'install.packages("purrr")'
         
     # Run R script
-    - name: Team shooting style
-      run: Rscript Team shooting style.R
+    - name: Team_shooting_style
+      run: Rscript Team_shooting_style.R
     
     # Add new files in data folder, commit along with other modified files, push.
     - name: Commit files

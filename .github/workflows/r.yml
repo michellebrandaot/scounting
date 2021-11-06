@@ -29,8 +29,8 @@ jobs:
         R -e 'install.packages("purrr")'
         
     # Run R script
-    - name: 2020season
-      run: Rscript 2020season.R
+    - name: Team shooting style
+      run: Rscript Team shooting style.R
     
     # Add new files in data folder, commit along with other modified files, push.
     - name: Commit files

@@ -7,7 +7,6 @@ library(tidyverse)
 library(janitor)
 library(gt)
 library(httr)
-library(devtools)
 library(purrr)
 
 #Set header connections

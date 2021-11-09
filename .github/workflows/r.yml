@@ -4,8 +4,6 @@ name: G-Scrape
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   g-scrape:

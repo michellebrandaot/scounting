@@ -27,8 +27,8 @@ jobs:
         R -e 'install.packages("purrr")'
         
     # Run R script
-    - name: Team_shooting_style
-      run: Rscript Team_shooting_style.R
+    - name: Four_Factors_2020
+      run: Rscript Four_Factors_2020.R
 
     # Add new files in data folder, commit along with other modified files, push.
     - name: Commit files

@@ -132,5 +132,5 @@ Four_Factors2021 <-
   )
 
 
-write.csv(Four_Factors2021,'dataa/','four_factors2021.csv'))
+write.csv(Four_Factors2021,'data/','four_factors2021.csv'))
 
